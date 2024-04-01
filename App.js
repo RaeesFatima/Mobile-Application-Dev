@@ -23,7 +23,16 @@ import NewCustomHook from './CustomHooks/NewCustomHook';
 import GetApi from './API/GetApi';
 import AppNavigation from './FireBasics/AppNavigation';
 import NotificationsScreen from './FireBasics/Components/NotificationScreen';
-
+import HomeScreen from './FireBasics/Screens/HomeScreen';
+import SettingsScreen from './FireBasics/Screens/SettingsScreen';
+import AccountScreen from './FireBasics/Screens/AccountScreen';
+import UserNavigation from './FireBasics/Screens/User/UserNavigation';
+import UserNotification from './FireBasics/Screens/User/UserNotification';
+import UserSetting from './FireBasics/Screens/User/UserSetting';
+import UserHome from './FireBasics/Screens/User/UserHome';
+import UserAccount from './FireBasics/Screens/User/UserAccount';
+import QuranHomePage from './MidLab/QuranHomePage';
+import SettingPage from './SettingPage';
 export default function App() {
 
   const Stack = createNativeStackNavigator();
@@ -205,6 +214,77 @@ export default function App() {
         <Stack.Screen 
           name="NotificationsScreen" 
           component={NotificationsScreen}
+          options={{
+            headerShown:true
+          }}
+        />
+         <Stack.Screen 
+          name="HomeScreen" 
+          component={HomeScreen}
+          options={{
+            headerShown:true
+          }}
+        />
+        <Stack.Screen 
+          name="SettingsScreen" 
+          component={SettingsScreen}
+          options={{
+            headerShown:true
+          }}
+        />
+         <Stack.Screen 
+          name="AccountScreen" 
+          component={AccountScreen}
+          options={{
+            headerShown:true
+          }}
+        />
+        <Stack.Screen 
+          name="UserNavigation" 
+          component={UserNavigation}
+          options={{
+            headerShown:false
+          }}
+        />
+
+<Stack.Screen 
+          name="UserHome" 
+          component={UserHome}
+          options={{
+            headerShown:true
+          }}
+        />
+        <Stack.Screen 
+          name="UserSetting" 
+          component={UserSetting}
+          options={{
+            headerShown:true
+          }}
+        />
+         <Stack.Screen 
+          name="UserAccount" 
+          component={UserAccount}
+          options={{
+            headerShown:true
+          }}
+        />
+        <Stack.Screen 
+          name="UserNotification" 
+          component={UserNotification}
+          options={{
+            headerShown:true
+          }}
+        />
+        <Stack.Screen 
+          name="QuranHomePage" 
+          component={QuranHomePage}
+          options={{
+            headerShown:true
+          }}
+        />
+        <Stack.Screen 
+          name="SettingPage" 
+          component={SettingPage}
           options={{
             headerShown:true
           }}
